@@ -6,7 +6,7 @@ const minify = require('gulp-minify-css');
 function js(){
     return src([
         'public/js/jquery-3.7.1.min.js',
-        'public/js/bootstrap.min.js',
+        'public/js/bootstrap.bundle.min.js',
         'public/js/main.js'
     ]).pipe(concat("main.min.js"))
     .pipe(uglify())
